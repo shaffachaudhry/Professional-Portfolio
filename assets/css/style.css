@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+
+}
+
+:root {
+
+
+  --base: rgb(31, 47, 37);
+  --highlight:  rgb(92, 114, 93);
+  --undertone: rgb(234, 234, 217);
+  --surface: rgb(24, 34, 28);
+  --overtone: rgb(114, 142, 115);
+  --shadow: #293423;
+
+}
+
+body {
+
+  padding: 0;
+  margin: 0;
+  color: var(--base);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.75;
+  background-color: var(--undertone);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface)
+}
+
+header h1 {
+  margin: 0px;
+  padding: 20px;
+  line-height: 1;
+  color: var(--surface);
+  background-color: var(--overtone);
+  font-size: 60px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 7px;
+  color: var(--highlight);
+  margin-right: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--undertone);
+}
+
+main {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.hero-banner {
+  padding: 0;
+  display: flex;
+  background-image: url("../images/hero.jpg");
+  background-size:cover;
+  background-position: center;
+  min-height:40vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.main-body {
+  margin-right: 7%;
+  margin-left: 7%;
+}
+
+.bodysection {
+  margin: 35px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items:normal;
+}
+
+.bodysection h2 {
+  flex: 0 0 20%;
+  text-align:right;
+  font-size: 60px;
+  line-height: 1;
+  padding-right: 40px;
+  border-left: 5px solid var(--base);
+  border-bottom: 5px solid var(--base);
+}
+
+.bodysection > div {
+  flex: 0 0 70%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-box {
+  font-size: 20px;
+  border: 10px double var(--overtone);
+  color: var(--undertone);
+  min-height: 120px;
+  max-height: 150px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+
+.flex-box:first-child {
+    min-height: 300px;
+    min-width: 200px;
+    flex-basis: 100%;
+}
+
+
+.flex-box div {
+  background-color: var(--base);
+  font-size: 15px;
+}
+
+.flex-box:hover {
+  color:rgb(137, 116, 94);
+}
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact address a:hover {
+  color: var(--overtone);
+}
+.contact address a {
+  color: var(--surface);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-style :italic;
+  margin: 2px;
+  display: inline-block;
+}
+
+
+.professional-portfolio {
+  background-image: url("../images/professional-portfolio.jpg");
+  background-position: center;
+}
+
+.project-2 {
+  background-image: url("../images/loading.jpg");
+  background-position: center;
+}
+
+.project-3 {
+  background-image: url("../images/loading.jpg");
+  background-position: center;
+}
+
+.project-4 {
+  background-image: url("../images/loading.jpg");
+  background-position: center;
+}
+
+.project-5 {
+  background-image: url("../images/loading.jpg");
+  background-position: center;
+}
+
+
+@media screen and (max-width: 992px) {
+  header {
+    padding: 0 0 10px 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  header h1 {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .bodysection div {
+    flex: 0 0 100%;
+  }
+
+  .bodysection h2 {
+    flex: 0 0 100%;
+    border-right: 5px solid var(--base);
+    border-left: 5px solid var(--base);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+}
