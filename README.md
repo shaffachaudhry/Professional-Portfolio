@@ -9,10 +9,10 @@ Much of the code, especially for CSS was completed with the help of in class act
 
 
 ## Github Repsitory Link
-https://github.com/shaffachaudhry/challenge-2
+https://github.com/shaffachaudhry/Professional-Portfolio
 
 ## Deployed Application Link
-https://shaffachaudhry.github.io/challenge-2/
+https://shaffachaudhry.github.io/Professional-Portfolio/
 
 ## Contact Information
 email: aamir.shaffa@gmail.com
