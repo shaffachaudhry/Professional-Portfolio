@@ -179,7 +179,9 @@ main {
 
 .professional-portfolio {
   background-image: url("../images/professional-portfolio.jpg");
-  background-position: center;
+  background-position:center;
+  background-size: 800px 800px;
+  
 }
 
 .project-2 {
@@ -251,6 +253,8 @@ main {
   .contact address {
     flex-direction: column;
     align-items: flex;
+  }
+  .professional-portfolio {
   }
 }
 
